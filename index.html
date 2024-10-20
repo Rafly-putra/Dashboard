@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard E-commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>ibox</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Apps</li>
+      <li>UI Kits</li>
+      <li>Forms</li>
+      <li>Board</li>
+      <li>Invoice</li>
+      <li>Products</li>
+      <li>Settings</li>
+      <div class ="space-between"></div>
+      <li>by Rafly</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+      <h1>Dashboard</h1>
+      <button class="create-report">Create Report</button>
+    </header>
+
+    <!-- Charts Section -->
+    <div class="charts-container">
+      <div class="chart-item small-chart">
+        <h3>Pendapatan Bulanan</h3>
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="chart-item small-chart">
+        <h3>Distribusi Penjualan per 3 bulan</h3>
+        <canvas id="salesPieChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-container">
+      <h3>Detail Penjualan</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama Produk</th>
+            <th>Kategori</th>
+            <th>Jumlah Terjual</th>
+            <th>Harga Satuan</th>
+            <th>Total Pendapatan (Rp)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Iphone 11</td>
+            <td>Elektronik</td>
+            <td>20</td>
+            <td>Rp7,650,000</td>
+            <td>Rp153,000,000</td>
+          </tr>
+          <tr>
+            <td>Iphone 12</td>
+            <td>Elektronik</td>
+            <td>15</td>
+            <td>Rp8,110,000</td>
+            <td>Rp121,650,000</td>
+          </tr>
+          <tr>
+            <td>Iphone 13</td>
+            <td>Elektronik</td>
+            <td>5</td>
+            <td>Rp13,999,000</td>
+            <td>Rp69,995,000</td>
+          </tr>
+          <tr>
+            <td>Iphone 14</td>
+            <td>Elektronik</td>
+            <td>10</td>
+            <td>Rp17,181,857</td>
+            <td>Rp171,818,570</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

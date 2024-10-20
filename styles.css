@@ -1,0 +1,123 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    height: 100vh;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  .space-between {
+    margin-top: 170px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  .create-report {
+    background-color: #5cc7ac;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .charts-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .chart-item {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 500px;
+    height: 300px;  /* Atur tinggi tetap agar grafik tidak memanjang */
+    margin: auto;   /* Pusatkan grafik */
+  }
+
+  .chart-item canvas {
+    max-width: 100%;  /* Grafik mengikuti lebar container */
+    height: 100px;    /* Kurangi tinggi grafik */
+}
+
+  /* Table Section */
+.table-container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+ 
+.table-container h3 {
+    margin-bottom: 10px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  table th {
+    background-color: #5cc7ac;
+    color: white;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
